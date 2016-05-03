@@ -21,9 +21,9 @@ namespace LaptopShop
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (value == string.Empty)
                 {
-                    throw new ArgumentNullException("Battery description cannot be null or empty.");
+                    throw new ArgumentOutOfRangeException("Battery description cannot be null or empty.");
                 }
                 this.description = value;
             }
