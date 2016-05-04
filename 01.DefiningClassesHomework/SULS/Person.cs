@@ -2,7 +2,7 @@
 
 namespace SULS
 {
-    public class Person
+    public abstract class Person
     {
         private string firstName;
         private string lastName;

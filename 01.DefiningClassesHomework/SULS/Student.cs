@@ -2,7 +2,7 @@
 
 namespace SULS
 {
-    public class Student : Person
+    public abstract class Student : Person
     {
         private long studentNumber;
         private double averageGrade;

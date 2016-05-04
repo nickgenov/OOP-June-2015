@@ -2,7 +2,7 @@
 
 namespace SULS
 {
-    public class CurrentStudent : Student
+    public abstract class CurrentStudent : Student
     {
         private string currentCourse;
 

@@ -2,7 +2,7 @@
 
 namespace SULS
 {
-    public class Trainer : Person
+    public abstract class Trainer : Person
     {
         public Trainer(string firstName, string lastName, int age) : base(firstName, lastName, age)
         {
