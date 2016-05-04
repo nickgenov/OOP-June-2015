@@ -1,6 +1,9 @@
 ﻿namespace SULS
 {
-    public class OnlineStudent
+    public class OnlineStudent : CurrentStudent
     {
+        public OnlineStudent(string firstName, string lastName, int age, long studentNumber, double averageGrade, string currentCourse) : base(firstName, lastName, age, studentNumber, averageGrade, currentCourse)
+        {
+        }
     }
 }

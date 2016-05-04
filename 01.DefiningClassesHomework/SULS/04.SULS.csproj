@@ -54,10 +54,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeniorTrainer.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="SULSTest.cs" />
     <Compile Include="Trainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="SULS.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
