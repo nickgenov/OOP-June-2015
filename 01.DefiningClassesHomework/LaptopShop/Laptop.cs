@@ -184,7 +184,7 @@ namespace LaptopShop
 
         public override string ToString()
         {
-            return string.Format("Model: {0}, price: {1} lv., manufacturer: {2}", this.Model, this.Price,
+            return string.Format("Model: {0}, price: {1:C}, manufacturer: {2}", this.Model, this.Price,
                 this.Manufacturer ?? "[unknown]");
         }
     }

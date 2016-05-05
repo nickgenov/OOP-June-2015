@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace SULS
@@ -20,9 +21,12 @@ namespace SULS
                 new OnsiteStudent("Minka", "Georgieva", 33, 10002500320, 3.3, "OOP", 5),
             };
 
-            //TODO linq filter and sort
+            var currentStudents = people.OfType<CurrentStudent>().OrderBy(s => s.AverageGrade);
 
-            //TODO override toString() in Trainer and Student to be able to print them
+            foreach (var currentStudent in currentStudents)
+            {
+                Console.WriteLine(currentStudent);
+            }
         }
     }
 }

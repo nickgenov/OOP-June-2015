@@ -45,5 +45,12 @@ namespace SULS
                 this.averageGrade = value;
             }
         }
+
+        public override string ToString()
+        {
+            return string.Format(
+                "Student information: name: {0} {1}, age: {2}, student number: {3}, average grade: {4}", this.FirstName,
+                this.LastName, this.Age, this.StudentNumber, this.AverageGrade);
+        }
     }
 }
