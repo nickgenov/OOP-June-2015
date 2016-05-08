@@ -43,16 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Developer.cs" />
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="Interfaces\IRegularEmployee.cs" />
+    <Compile Include="Classes\Manager.cs" />
+    <Compile Include="Classes\Person.cs" />
+    <Compile Include="Classes\Project.cs" />
+    <Compile Include="Classes\RegularEmployee.cs" />
+    <Compile Include="Classes\Sale.cs" />
+    <Compile Include="Classes\SalesEmployee.cs" />
     <Compile Include="CompanyMain.cs" />
+    <Compile Include="Enums\Department.cs" />
+    <Compile Include="Enums\State.cs" />
+    <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IDeveloper.cs" />
+    <Compile Include="Interfaces\IEmployee.cs" />
+    <Compile Include="Interfaces\IManager.cs" />
+    <Compile Include="Interfaces\IPerson.cs" />
+    <Compile Include="Interfaces\IProject.cs" />
+    <Compile Include="Interfaces\ISale.cs" />
+    <Compile Include="Interfaces\ISalesEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Homework.docx" />
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
