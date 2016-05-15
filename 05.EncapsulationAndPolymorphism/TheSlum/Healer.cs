@@ -33,14 +33,18 @@ namespace TheSlum
 
         public override Character GetTarget(IEnumerable<Character> targetsList)
         {
+            //TODO Min Health of targets who are not IHeal
+            //TODO It only works with one healer per team
+
             int minHealthPoints = targetsList
                 .Where(c => this.Team == c.Team)
                 .Where(c => c.IsAlive)
+                .Where(c => c is IHeal == false)
                 .Min(c => c.HealthPoints);
 
             //TODO Find a better way to prevent healer to target itself.
             //TODO Currently I use: .Where(c => c is IHeal == false)
-            //TODO It only works with one healer per team
+            //TODO Again, it only works with one healer per team
 
             Character targetCharacter = targetsList
                 .Where(c => this.Team == c.Team)
@@ -52,7 +56,7 @@ namespace TheSlum
 
         public override string ToString()
         {
-            string result = string.Format("{0}, Healing: {1}", base.ToString(), this.HealingPoints);
+            string result = string.Format("-- {0}, Healing: {1}", base.ToString(), this.HealingPoints);
             return result;
         }
     }

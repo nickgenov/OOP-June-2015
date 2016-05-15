@@ -20,7 +20,8 @@ namespace Bank.Classes
                 return this.Balance;
             }
 
-            return this.Balance * (1 + this.InterestRate * months);
+            decimal result = this.Balance * (1 + this.InterestRate * months);
+            return result;
         }
     }
 }

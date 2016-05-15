@@ -12,14 +12,14 @@ namespace Bank
             ICustomer petar = new Individual(1, "Petar Petrov");
             ICustomer vivacom = new Company(2, "Vivacom");
 
-            var companyDeposit = new Deposit(vivacom, 100000, 10);
-            var individualDeposit = new Deposit(petar, 100, 10);
+            var companyDeposit = new Deposit(vivacom, 100000, 0.01m);
+            var individualDeposit = new Deposit(petar, 1000, 0.01m);
 
-            var companyLoan = new Loan(vivacom, 100000, 10);
-            var individualLoan = new Loan(petar, 100, 10);
+            var companyLoan = new Loan(vivacom, 100000, 0.01m);
+            var individualLoan = new Loan(petar, 1000, 0.01m);
 
-            var companyMortgage = new Mortgage(vivacom, 100000, 10);
-            var individualMortgage = new Mortgage(petar, 100, 5);
+            var companyMortgage = new Mortgage(vivacom, 10000, 0.01m);
+            var individualMortgage = new Mortgage(petar, 1000, 0.01m);
 
             var accounts = new List<Account>()
             {
@@ -33,13 +33,10 @@ namespace Bank
 
             int period = 6;
 
-            //TODO debug results - not correct!
-
             foreach (var account in accounts)
             {
-                Console.WriteLine("Account type: {0}, balance: {1}, rate: {2}, interest: {3} ({4} month period)", account.GetType().Name, account.Balance, account.InterestRate, account.CalculateInterest(period), period);
+                Console.WriteLine("Account type: {0}, balance: {1}, rate: {2}, balance + interest: {3} (after {4} month period)", account.GetType().Name, account.Balance, account.InterestRate, account.CalculateInterest(period), period);
             }
-
         }
     }
 }

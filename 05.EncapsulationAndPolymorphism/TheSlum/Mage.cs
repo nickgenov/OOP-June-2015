@@ -56,7 +56,7 @@ namespace TheSlum
 
         public override string ToString()
         {
-            string result = string.Format("{0}, Attack: {1}", base.ToString(), this.AttackPoints);
+            string result = string.Format("-- {0}, Attack: {1}", base.ToString(), this.AttackPoints);
             return result;
         }
     }
