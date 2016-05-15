@@ -38,9 +38,13 @@ namespace TheSlum
                 .Where(c => c.IsAlive)
                 .Min(c => c.HealthPoints);
 
+            //TODO Find a better way to prevent healer to target itself.
+            //TODO Currently I use: .Where(c => c is IHeal == false)
+            //TODO It only works with one healer per team
+
             Character targetCharacter = targetsList
                 .Where(c => this.Team == c.Team)
-                .Where(c => c.IsAlive)
+                .Where(c => c is IHeal == false)
                 .FirstOrDefault(c => c.HealthPoints == minHealthPoints);
 
             return targetCharacter;

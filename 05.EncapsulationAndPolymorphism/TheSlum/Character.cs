@@ -1,5 +1,6 @@
 ﻿namespace TheSlum
 {
+    using System;
     using System.Collections.Generic;
 
     public abstract class Character : GameObject
@@ -7,19 +8,15 @@
         protected Character(string id, int x, int y, int healthPoints, int defensePoints, Team team, int range)
             : base(id)
         {
-            this.X = x;
-            this.Y = y;
             this.HealthPoints = healthPoints;
             this.DefensePoints = defensePoints;
             this.Team = team;
-            this.Range = range;
-            this.Inventory = new List<Item>();
             this.IsAlive = true;
+            this.X = x;
+            this.Y = y;
+            this.Inventory = new List<Item>();
+            this.Range = range;
         }
-
-        public int X { get; set; }
-
-        public int Y { get; set; }
 
         public int HealthPoints { get; set; }
 
@@ -27,21 +24,31 @@
 
         public Team Team { get; private set; }
 
-        public int Range { get; set; }
-
         public List<Item> Inventory { get; private set; }
+
+        public int Range { get; set; }
 
         public bool IsAlive { get; set; }
 
+        public int X { get; set; }
 
+        public int Y { get; set; }
+
+        public abstract Character GetTarget(IEnumerable<Character> targetsList);
 
         public abstract void AddToInventory(Item item);
 
         public abstract void RemoveFromInventory(Item item);
 
-        public abstract Character GetTarget(IEnumerable<Character> targetsList);
-
-
+        public override string ToString()
+        {
+            return string.Format(
+                "Name: {0}, Team: {2}, Health: {1}, Defense: {3}",
+                this.Id,
+                this.HealthPoints,
+                this.Team,
+                this.DefensePoints);
+        }
 
         protected virtual void ApplyItemEffects(Item item)
         {
@@ -57,16 +64,6 @@
             {
                 this.HealthPoints = 1;
             }
-        }
-
-        public override string ToString()
-        {
-            return string.Format(
-                "Name: {0}, Team: {2}, Health: {1}, Defense: {3}",
-                this.Id,
-                this.HealthPoints,
-                this.Team,
-                this.DefensePoints);
         }
     }
 }
