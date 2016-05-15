@@ -1,4 +1,4 @@
-﻿namespace TheSlum.Interfaces
+﻿namespace TheSlum
 {
     public class Injection : Bonus
     {
@@ -7,8 +7,10 @@
         private const int InjectionAttackEffect = 0;
         private const int InjectionDuration = 3;
 
-        public Injection(string id) : base(id, InjectionHealthEffect, InjectionDefenseEffect, InjectionAttackEffect)
+        public Injection(string id) 
+            : base(id, InjectionHealthEffect, InjectionDefenseEffect, InjectionAttackEffect)
         {
+            this.Countdown = InjectionDuration;
         }
     }
 }

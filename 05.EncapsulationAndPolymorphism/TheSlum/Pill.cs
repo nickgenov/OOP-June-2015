@@ -7,8 +7,10 @@
         private const int PillAttackEffect = 100;
         private const int PillDuration = 1;
 
-        public Pill(string id) : base(id, PillHealthEffect, PillDefenseEffect, PillAttackEffect)
+        public Pill(string id) 
+            : base(id, PillHealthEffect, PillDefenseEffect, PillAttackEffect)
         {
+            this.Countdown = PillDuration;
         }
     }
 }

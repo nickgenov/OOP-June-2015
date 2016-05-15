@@ -2,7 +2,7 @@
 {
     using GameEngine;
 
-    public class Program
+    public class TheSlumMain
     {
         public static void Main()
         {
