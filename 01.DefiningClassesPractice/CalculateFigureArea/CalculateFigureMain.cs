@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CalculateFigureArea
 {
-    class Program
+    public class CalculateFigureMain
     {
         static void Main()
         {

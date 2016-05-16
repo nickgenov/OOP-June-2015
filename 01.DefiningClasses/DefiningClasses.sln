@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Persons", "Persons\01.Persons.csproj", "{2C87BF77-4984-42AE-92BF-C5CE26854BD9}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.PCCatalog", "PCCatalog\03.PCCatalog.csproj", "{6825B942-DC1A-4704-B5C7-17733FB260C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SULS", "SULS\04.SULS.csproj", "{B6897BF6-1EC7-4FED-BFC3-2972FD2B30D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dog", "Dog\Dog.csproj", "{E583DC00-BF44-4EDF-9A4E-3D9CB8209CB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B6897BF6-1EC7-4FED-BFC3-2972FD2B30D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6897BF6-1EC7-4FED-BFC3-2972FD2B30D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6897BF6-1EC7-4FED-BFC3-2972FD2B30D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E583DC00-BF44-4EDF-9A4E-3D9CB8209CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E583DC00-BF44-4EDF-9A4E-3D9CB8209CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E583DC00-BF44-4EDF-9A4E-3D9CB8209CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E583DC00-BF44-4EDF-9A4E-3D9CB8209CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

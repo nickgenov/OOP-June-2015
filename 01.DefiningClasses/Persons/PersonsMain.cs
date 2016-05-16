@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Persons
 {
-    class Program
+    public class PersonsMain
     {
         static void Main()
         {

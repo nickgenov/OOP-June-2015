@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Net.Http.Headers;
 
 namespace DefiningClassesExercise
 {
-    class Program
+    public class DogsMain
     {
         static void Main()
         {
@@ -24,7 +23,6 @@ namespace DefiningClassesExercise
             {
                 dog.Bark();
             }
-
         }
     }
 }

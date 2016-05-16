@@ -24,6 +24,5 @@ namespace CalculateFigureArea
                 return area;
             }
         }
-
     }
 }

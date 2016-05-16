@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace PCCatalog
 {
-    public class Program
+    public class PcCatalogMain
     {
         static void Main()
         {
