@@ -73,11 +73,7 @@
             throw new NotImplementedException();
         }
 
-
-        //TODO AddItem method is not virtual in the homework archive? ERROR??? 
-        //TODO If not, how to make it work?
-
-        protected virtual void AddItem(string[] inputParams)
+        protected void AddItem(string[] inputParams)
         {
             throw new NotImplementedException();
         }

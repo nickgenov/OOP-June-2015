@@ -42,7 +42,7 @@ namespace TheSlum.GameEngine
             }
         }
 
-        protected override void AddItem(string[] inputParams)
+        protected new void AddItem(string[] inputParams)
         {
             string characterId = inputParams[1];
             string itemClass = inputParams[2];
