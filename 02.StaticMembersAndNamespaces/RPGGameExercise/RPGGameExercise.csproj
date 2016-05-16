@@ -72,7 +72,7 @@
     <Compile Include="UI\ConsoleRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="RpgGameExercise.docx" />
+    <None Include="Exercise.docx" />
     <None Include="App.config" />
     <None Include="RpgGameClassDiagram.cd" />
   </ItemGroup>

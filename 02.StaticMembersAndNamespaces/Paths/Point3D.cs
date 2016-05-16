@@ -1,4 +1,4 @@
-﻿namespace Point3D
+﻿namespace Paths
 {
     public class Point3D
     {

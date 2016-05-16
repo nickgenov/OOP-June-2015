@@ -54,7 +54,7 @@
     <Compile Include="Geometry3D\DistanceCalculator3D.cs" />
     <Compile Include="Geometry3D\Path3D.cs" />
     <Compile Include="Geometry3D\Point3D.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="GeometryMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Storage\GeometryBinaryStorage.cs" />
     <Compile Include="Storage\GeometrySVGStorage.cs" />

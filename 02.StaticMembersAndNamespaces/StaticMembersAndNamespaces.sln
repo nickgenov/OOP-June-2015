@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Paths", "Paths\03.Paths.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Geometry", "Geometry\04.Geometry.csproj", "{1B3E1AF1-DCF5-447E-9E9D-369285B5D40A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.HTMLDispatcher", "HTMLDispatcher\05.HTMLDispatcher.csproj", "{EC84A76C-79AC-4076-BFBC-91E9B013D9CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.BitArray", "BitArray\06.BitArray.csproj", "{7EBA63ED-B642-462C-A6D0-6498962D56C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1B3E1AF1-DCF5-447E-9E9D-369285B5D40A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B3E1AF1-DCF5-447E-9E9D-369285B5D40A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B3E1AF1-DCF5-447E-9E9D-369285B5D40A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC84A76C-79AC-4076-BFBC-91E9B013D9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC84A76C-79AC-4076-BFBC-91E9B013D9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC84A76C-79AC-4076-BFBC-91E9B013D9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC84A76C-79AC-4076-BFBC-91E9B013D9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBA63ED-B642-462C-A6D0-6498962D56C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBA63ED-B642-462C-A6D0-6498962D56C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBA63ED-B642-462C-A6D0-6498962D56C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBA63ED-B642-462C-A6D0-6498962D56C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,11 @@
-﻿namespace Geometry
+﻿namespace BitArray
 {
-    class Program
+    public class BitArrayMain
     {
         static void Main()
         {
+
+
         }
     }
 }

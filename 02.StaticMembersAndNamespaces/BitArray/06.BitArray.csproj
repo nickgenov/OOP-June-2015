@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0CBE889-18D0-4D33-9972-B0B611280AFF}</ProjectGuid>
+    <ProjectGuid>{7EBA63ED-B642-462C-A6D0-6498962D56C5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DistanceCalculator</RootNamespace>
-    <AssemblyName>DistanceCalculator</AssemblyName>
+    <RootNamespace>BitArray</RootNamespace>
+    <AssemblyName>BitArray</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DistanceCalculatorMain.cs" />
-    <Compile Include="DistanceCalculator.cs" />
+    <Compile Include="BitArrayMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Point3D\01.Point3D.csproj">
-      <Project>{fbf5d2e3-139a-4905-8ae4-c0db0c3a5de1}</Project>
-      <Name>01.Point3D</Name>
-    </ProjectReference>
+    <None Include="Homework.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

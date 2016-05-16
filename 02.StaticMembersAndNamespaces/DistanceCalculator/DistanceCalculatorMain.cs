@@ -3,7 +3,7 @@
     using System;
     using Point3D;
 
-    public class CalculatorMain
+    public class DistanceCalculatorMain
     {
         static void Main()
         {

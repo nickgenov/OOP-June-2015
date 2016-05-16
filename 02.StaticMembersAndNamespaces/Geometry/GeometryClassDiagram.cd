@@ -77,11 +77,11 @@
       <FileName>Geometry3D\Point3D.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Geometry.Program" Collapsed="true">
+  <Class Name="Geometry.GeometryMain" Collapsed="true">
     <Position X="0.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>GeometryMain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Geometry.Storage.GeometryBinaryStorage" Collapsed="true">
