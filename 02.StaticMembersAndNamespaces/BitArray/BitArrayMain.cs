@@ -6,17 +6,15 @@ namespace BitArray
     {
         static void Main()
         {
-            var bitArray = new BitArray(5);
+            var bitArray = new BitArray(8);
 
-            bitArray[3] = 1;
-            Console.WriteLine(bitArray);
+            bitArray[7] = 1;
+            Console.WriteLine(bitArray); //128
 
-            bitArray[0] = 1;
-            Console.WriteLine(bitArray);
+            bitArray = new BitArray(100000);
 
-            bitArray[3] = 0;
-            Console.WriteLine(bitArray);
-
+            bitArray[99999] = 1;
+            Console.WriteLine(bitArray); //something huge
         }
     }
 }

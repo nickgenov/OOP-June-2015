@@ -8,7 +8,7 @@ namespace BitArray
         private const int MinBitArraySize = 1;
         private const int MaxBitArraySize = 100000;
 
-        private int[] elements;
+        private byte[] bits;
 
         public BitArray(int size)
         {
@@ -16,7 +16,8 @@ namespace BitArray
             {
                 throw new ArgumentOutOfRangeException("Size", "BitArray size must be in the range [1...100000]");
             }
-            this.elements = new int[size];
+
+            this.bits = new byte[size];
         }
 
 
@@ -26,17 +27,17 @@ namespace BitArray
             {
                 if (IsInvalidIndex(index))
                 {
-                    string message = string.Format("Array size is {0} elements. Index must be in the range [0...{1}]", this.elements.Length, this.elements.Length - 1);
+                    string message = string.Format("Array size is {0} bits. Index must be in the range [0...{1}]", this.bits.Length, this.bits.Length - 1);
                     throw new ArgumentOutOfRangeException("Index", message);
                 }
 
-                return elements[index];
+                return bits[index];
             }
             set
             {
                 if (IsInvalidIndex(index))
                 {
-                    string message = string.Format("Array size is {0} elements. Index must be in the range [0...{1}]", this.elements.Length, this.elements.Length - 1);
+                    string message = string.Format("Array size is {0} bits. Index must be in the range [0...{1}]", this.bits.Length, this.bits.Length - 1);
                     throw new ArgumentOutOfRangeException("Index", message);
                 }
 
@@ -45,13 +46,18 @@ namespace BitArray
                     throw new ArgumentException("Elements in the BitArray can accept values of 0 or 1", "Element");
                 }
 
-                elements[index] = value;
+                bits[index] = (byte)value;
             }
+        }
+
+        public override string ToString()
+        {
+            return ConvertBitArrayToDecimal().ToString();
         }
 
         private bool IsInvalidIndex(int index)
         {
-            int maxIndex = this.elements.Length - 1;
+            int maxIndex = this.bits.Length - 1;
 
             if (index < 0 || index > maxIndex)
             {
@@ -61,24 +67,32 @@ namespace BitArray
             return false;
         }
 
-
-        //TODO Fix method - results are wrong!
-        public override string ToString()
+        private BigInteger ConvertBitArrayToDecimal()
         {
-            BigInteger bitArrayValue = 0;
-            double power = 0;
+            BigInteger power = 0;
+            BigInteger decimalNum = 0;
 
-            for (int i = this.elements.Length - 1; i >= 0; i--)
+            for (int i = 0; i < this.bits.Length; i++)
             {
-                if (this.elements[i] == 1)
+                if (bits[i] == 1)
                 {
-                    BigInteger indexValue = (BigInteger)Math.Pow(2, power);
-                    bitArrayValue += indexValue;
+                    decimalNum += RaiseTwoToPower(power);
                 }
                 power++;
             }
 
-            return bitArrayValue.ToString();
+            return decimalNum;
+        }
+
+        private BigInteger RaiseTwoToPower(BigInteger power)
+        {
+            BigInteger result = 1;
+            for (int i = 1; i <= power; i++)
+            {
+                result *= 2;
+            }
+
+            return result;
         }
     }
 }
