@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ElementBuilder.cs" />
     <Compile Include="HtmlDispatcherMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
